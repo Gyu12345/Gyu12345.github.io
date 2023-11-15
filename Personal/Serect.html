@@ -1,19 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<style>
-    a:link {text-decoration: none; color:blue;}/*未访问的链接显示为蓝色，text-decoration:none将下划线隐藏*/
-    a:visited {color:blue;} /*用户已访问过的链接显示黑色*/
-    a:hover {color:pink;}   /*鼠标放置在链接上时显示为粉色*/
-    a:active {color:yellow;}  /* 链接被点击那一刻显示黄色 */
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style> 
+            p { 
+                font-size: 20px; 
+                text-align:center; 
+            } 
+          
+            /*unvisited link will appear green*/ 
+            a:link{ 
+                color:blus; 
+            } 
+          
+            /*visited link will appear blue*/ 
+            a:visited{ 
+                color:blue; 
+            } 
+          
+            /*when mouse hovers over link it will appear orange*/ 
+            a:hover{ 
+                color:orange; 
+            } 
+          
+            /*when the link is clicked, it will appear black*/ 
+            a:active{ 
+                color:blue; 
+            } 
+          
+        </style>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .flower {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid #ff69b4;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+       
+    </style>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .link-list {
+            list-style: none;
+            padding: 0;
+        }
+        .link-item {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+        .link-item a {
+            text-decoration: none;
+            color: #333;
+        }
+        .link-item a:hover {
+            color: #666;
+        }
+        .category {
+            margin-bottom: 20px;
+        }
+        .category h3 {
+            margin-bottom: 10px;
+        }
+    </style>
+    <title>My Serect</title>
 </style>
 <script src="lock.js"> 
 </script>
 </head>
 <body>
-<h1>GYU的私人网页</h1>
-<a href="https://gyu12345.github.io/Personal/Birthday/HappyBirthday.html">生日快乐</a>
-<a href="https://gyu12345.github.io/Personal/cool/cool.html">跳动的画</a>
+    <header>
+        <h1>My Serect</h1>
+    </header>
+    <section>
+        <div class="category">
+            <h3>Serect</h3>
+            <ul class="link-list">
+                <li class="link-item"><a href="https://gyu12345.github.io/Personal/Birthday/HappyBirthday.html">Happy Birthday</a></li>
+	<li class="link-item"><a href="https://gyu12345.github.io/Personal/cool/cool.html">Drawing</a></li>
+            </ul>
+        </div>
+    </section>
 </body>
 </html>
