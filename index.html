@@ -1,29 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Welcome to you!</title>
-<link rel="icon" href="https://files.cnblogs.com/files/blogs/800507/Harry.ico?t=1692421363&download=true" sizes="16x16">
-<style>
-    a:link {text-decoration: none; color:blue;}/*未访问的链接显示为蓝色，text-decoration:none将下划线隐藏*/
-    a:visited {color:blue;} /*用户已访问过的链接显示黑色*/
-    a:hover {color:pink;}   /*鼠标放置在链接上时显示为粉色*/
-    a:active {color:yellow;}  /* 链接被点击那一刻显示黄色 */
-</style>
-<h1><i>G's Website</i></h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+       <style> 
+            p { 
+                font-size: 20px; 
+                text-align:center; 
+            } 
+          
+            /*unvisited link will appear green*/ 
+            a:link{ 
+                color:blus; 
+            } 
+          
+            /*visited link will appear blue*/ 
+            a:visited{ 
+                color:blue; 
+            } 
+          
+            /*when mouse hovers over link it will appear orange*/ 
+            a:hover{ 
+                color:orange; 
+            } 
+          
+            /*when the link is clicked, it will appear black*/ 
+            a:active{ 
+                color:blue; 
+            } 
+          
+        </style>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .flower {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid #ff69b4;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+       
+    </style>
+    <title>My Web Page</title>
 </head>
 <body>
-<h2>简介:</h2>
-<p>这里是G.的网站,在这个网站上我会发布一些有趣的网址，亦或有趣的图片，代码等\(>-<)></p>
-<h2>界面:</h2>
-<a href="https://gyu12345.github.io/Personal/my.html"><h3>个人</h3></a>
-<p>具体包括洛谷，GitHub等，详情自己看(doge)</p>
-<p>站主个人在各个平台里的账户(有能力的点个赞或关注吧)(doge)</p>
-<a href="https://gyu12345.github.io/Blogs/Blog_index.html"><h3>博客</h3></a>
-<p>站主的个人博客就是这里了qwq,会不定期发布博文,</p>
-<a href="https://www.cnblogs.com/gyu12345/">站主的博客园账号</a>
-<a href="httPs://gyu12345.github.io/Website/Web.html"><h3>有趣的网址</h3></a>
-<p>网络上一些有趣的网址和站主自己制作或搬运的一些小程序</p>
-<a href="https://gyu12345.github.io/Code/code_index.html"><h3>代码程序</h3></a>
-<p>站主自己写的一些代码程序和一些常用软件下载网址(C++居多qwq)</p>
+    <header>
+        <h1>Welcome to G's Websites</h1>
+    </header>
+    <nav>
+        <a href="#blog">Blog</a>
+        <a href="#fun">Fun Links</a>
+        <a href="#code">Code Samples</a>
+    </nav>
+    <section id="person">
+        <div class="person"></div>
+        <h2>Personal Introduction</h2>
+        <p>Hello, I am a web developer with a passion for creating amazing websites.</p>
+        <ul>
+            <li><a href="https://gyu12345.github.io/Personal/my.html">Person</a></li>
+        </ul>
+    </section>
+    <section id="blog">
+        <h2>My Blog</h2>
+        <p>Here you can find my latest thoughts and articles on web development and design.</p>
+        <ul>
+            <li><a href="https://gyu12345.github.io/Blogs/Blog_index.html">More</a></li>
+        </ul>
+    </section>
+    <section id="fun">
+        <h2>Fun Links</h2>
+        <p>Check out these interesting and entertaining websites:</p>
+        <ul>
+            <li><a href="https://wallpaperscraft.com/">Wallpaper</a></li>
+            <li><a href="https://gyu12345.github.io/Website/Saying.html">Saying</a></li>
+            <li><a href="https://codeforces.com/">Codeforces</a></li>
+            <li><a href="https://gyu12345.github.io/Website/Web.html">More</a></li>
+        </ul>
+    </section>
+    <section id="code">
+        <h2>Code Samples</h2>
+        <p>Take a look at some code samples:</p>
+        <ul>
+            <li><a href="https://download.radmin-lan.cn/download/files/Radmin_LAN_1.4.4642.1.exe">Radmin LAN</a></li>
+            <li><a href="https://javadl.oracle.com/webapps/download/AutoDL?BundleId=249203_b291ca3e0c8548b5a51d5a5f50063037">JAVA8</a></li>
+            <li><a href="https://gyu12345.github.io/Code/code_index.html">More</a></li>
+        </ul>
+    </section>
 </body>
 </html>
