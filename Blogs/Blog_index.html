@@ -1,24 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>博客首页</title>
-<style>
-    a:link {text-decoration: none; color:blue;}/*未访问的链接显示为蓝色，text-decoration:none将下划线隐藏*/
-    a:visited {color:blue;} /*用户已访问过的链接显示黑色*/
-    a:hover {color:pink;}   /*鼠标放置在链接上时显示为粉色*/
-    a:active {color:yellow;}  /* 链接被点击那一刻显示黄色 */
-</style>
-<meta name="msvalidate.01" content="3064C846EC86D4D01B98EBB596035A99" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .blog-list {
+            list-style: none;
+            padding: 0;
+        }
+        .blog-item {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+        .blog-item a {
+            text-decoration: none;
+            color: #333;
+        }
+        .blog-item a:hover {
+            color: #666;
+        }
+    </style>
+    <title>My Blog</title>
 </head>
 <body>
-<h1>G.的博客小屋🌙</h1>
-<h2>代码板块</h2>
-<h3>C++</h3>
-<h4>基本语法</h4>
-<a href="http://gyu12345.github.io/Blogs/C++/input_output.html">C++基本输入输出</a>
-<h3>html</h3>
-<h3>Vbs</h3>
-<h2>日常板块</h2>
-<h3>风景</h3>
+    <header>
+        <h1>Welcome to My Blog</h1>
+    </header>
+    <section>
+        <h2>Recent Posts</h2>
+        <ul class="blog-list">
+            <li class="blog-item"><a href="https://gyu12345.github.io/Blogs/C++/Html.html">What is HTML?</a></li>
+        </ul>
+    </section>
 </body>
 </html>
