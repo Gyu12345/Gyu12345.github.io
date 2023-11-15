@@ -1,24 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>G.程序库</title>
-<style>
-    a:link {text-decoration: none; color:blue;}/*未访问的链接显示为蓝色，text-decoration:none将下划线隐藏*/
-    a:visited {color:blue;} /*用户已访问过的链接显示黑色*/
-    a:hover {color:pink;}   /*鼠标放置在链接上时显示为粉色*/
-    a:active {color:yellow;}  /* 链接被点击那一刻显示黄色 */
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style> 
+            p { 
+                font-size: 20px; 
+                text-align:center; 
+            } 
+          
+            /*unvisited link will appear green*/ 
+            a:link{ 
+                color:blus; 
+            } 
+          
+            /*visited link will appear blue*/ 
+            a:visited{ 
+                color:blue; 
+            } 
+          
+            /*when mouse hovers over link it will appear orange*/ 
+            a:hover{ 
+                color:orange; 
+            } 
+          
+            /*when the link is clicked, it will appear black*/ 
+            a:active{ 
+                color:blue; 
+            } 
+          
+        </style>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .flower {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid #ff69b4;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+       
+    </style>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .link-list {
+            list-style: none;
+            padding: 0;
+        }
+        .link-item {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+        .link-item a {
+            text-decoration: none;
+            color: #333;
+        }
+        .link-item a:hover {
+            color: #666;
+        }
+        .category {
+            margin-bottom: 20px;
+        }
+        .category h3 {
+            margin-bottom: 10px;
+        }
+    </style>
+    <title>Interesting Codes</title>
 </head>
 <body>
-<h2>G.程序库</h2>
-<p>注:仅供个人使用</p>
-<p><b>C++游戏</b></p>
-<a href="https://gyu12345.github.io/Code/HarryPotter.cpp" download="HarryPotter.cpp">Harry Potter RPG版本</a>
-<p><b>常用程序</b></p>
-<a href="https://download.radmin-lan.cn/download/files/Radmin_LAN_1.4.4642.1.exe" download="Radmin_LAN_1.4.4642.1.exe">Radmin Lan下载</a>
-<a href="https://javadl.oracle.com/webapps/download/AutoDL?BundleId=249203_b291ca3e0c8548b5a51d5a5f50063037" download="JAVA8">Java8下载</a>
-<a href="https://developer-oss.lanzouc.com/file/?UDYAPl5vUGEBCFNrVGFSPlBvUmpWW1QzCmFTMAI/ViRTNgZxD2AFf1Y2Bn4Kb1FgVSEDfFNlAHJXdlU1VGEBbFA1AAhealBgAWpTNFQ0UmdQOFJnVjhUYQo8U2ICeFYxUyAGbA9gBWFWOQZkCmlRY1U9AyBTfAByV21VYVQ4ATJQYwB4XjJQNAF4UzdUNVJ8UDNSblZvVG8KPlM3AjpWYlNiBjQPYQVmVmEGMgo6UWRVawMzUz0AO1cyVTdUbQFlUGAAb14zUDwBYVNgVGZSYFAkUi1WYFQmCitTIAItVjJTIQY4DzYFbFY2BmkKbVFkVTkDNFMqAHZXOVU+VG0BZlBtAGZeNFA0AWdTNVQwUmtQOFJnVjFUeAojU3MCOFY7UyQGbA9jBWZWMAZgCm5RYFU4AzRTPAA2V3ZVJlR4AXdQbQBmXjVQPQFvUzdUMlJiUDNSblY7VHAKeFM8Ai5WalNiBmkPYQV/VjkGZQpwUWNVNwMoUz4ANQ==" download="PCL2">PCL2下载</a>
-<p><b>高危</b></p>
-<a href="https://gyu12345.github.io/Code/vector.exe" download="vector.exe">内存掠夺者</a>
+    <header>
+        <h1>Interesting Codes</h1>
+    </header>
+    <section>
+        <div class="category">
+            <h3>Warning</h3>
+            <ul class="link-list">
+                <li class="link-item"><a href="https://gyu12345.github.io/Code/vector.exe" download="vector.exe">Vector Killer</a></li>
+            </ul>
+        </div>
+        <div class="category">
+            <h3>Usual</h3>
+            <ul class="link-list">
+                <li class="link-item"><a href="https://download.radmin-lan.cn/download/files/Radmin_LAN_1.4.4642.1.exe" download="Radmin_LAN_1.4.4642.1.exe">Radmin Lan Download</a></li>
+                <li class="link-item"><a href="https://javadl.oracle.com/webapps/download/AutoDL?BundleId=249203_b291ca3e0c8548b5a51d5a5f50063037" download="JAVA8">Java8 Download</a></li>
+            </ul>
+        </div>
+        <div class="category">
+            <h3>Game</h3>
+            <ul class="link-list">
+                <li class="link-item"><a href="https://developer-oss.lanzouc.com/file/?UDYAPl5vUGEBCFNrVGFSPlBvUmpWW1QzCmFTMAI/ViRTNgZxD2AFf1Y2Bn4Kb1FgVSEDfFNlAHJXdlU1VGEBbFA1AAhealBgAWpTNFQ0UmdQOFJnVjhUYQo8U2ICeFYxUyAGbA9gBWFWOQZkCmlRY1U9AyBTfAByV21VYVQ4ATJQYwB4XjJQNAF4UzdUNVJ8UDNSblZvVG8KPlM3AjpWYlNiBjQPYQVmVmEGMgo6UWRVawMzUz0AO1cyVTdUbQFlUGAAb14zUDwBYVNgVGZSYFAkUi1WYFQmCitTIAItVjJTIQY4DzYFbFY2BmkKbVFkVTkDNFMqAHZXOVU+VG0BZlBtAGZeNFA0AWdTNVQwUmtQOFJnVjFUeAojU3MCOFY7UyQGbA9jBWZWMAZgCm5RYFU4AzRTPAA2V3ZVJlR4AXdQbQBmXjVQPQFvUzdUMlJiUDNSblY7VHAKeFM8Ai5WalNiBmkPYQV/VjkGZQpwUWNVNwMoUz4ANQ==" download="PCL2">PCL2 Download</a></li>
+                <li class="link-item"><a href="https://gyu12345.github.io/Code/HarryPotter.cpp" download="HarryPotter.cpp">Harry Potter RPG</a></li>
+	<li class="link-item"><a href="https://chishenme.xyz/">Eat?</a></li>
+            </ul>
+        </div>
+        <div class="category">
+            <h3>Other</h3>
+            <ul class="link-list">
+            </ul>
+        </div>
+    </section>
 </body>
 </html>
