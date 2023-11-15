@@ -3,75 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style> 
-            p { 
-                font-size: 20px; 
-                text-align:center; 
-            } 
-          
-            /*unvisited link will appear green*/ 
-            a:link{ 
-                color:blus; 
-            } 
-          
-            /*visited link will appear blue*/ 
-            a:visited{ 
-                color:blue; 
-            } 
-          
-            /*when mouse hovers over link it will appear orange*/ 
-            a:hover{ 
-                color:orange; 
-            } 
-          
-            /*when the link is clicked, it will appear black*/ 
-            a:active{ 
-                color:blue; 
-            } 
-          
-        </style>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-        nav {
-            background-color: #f2f2f2;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .flower {
-            width: 0;
-            height: 0;
-            border-left: 50px solid transparent;
-            border-right: 50px solid transparent;
-            border-bottom: 100px solid #ff69b4;
-            position: absolute;
-            top: 50px;
-            left: 50px;
-        }
-       
-    </style>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -91,66 +22,31 @@
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h2 {
-            margin-top: 0;
-        }
-        .link-list {
-            list-style: none;
-            padding: 0;
-        }
-        .link-item {
-            border-bottom: 1px solid #ccc;
-            padding: 10px 0;
-        }
-        .link-item a {
-            text-decoration: none;
-            color: #333;
-        }
-        .link-item a:hover {
-            color: #666;
-        }
-        .category {
-            margin-bottom: 20px;
-        }
-        .category h3 {
+        .blog-title {
+            font-size: 24px;
             margin-bottom: 10px;
         }
+        .blog-meta {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .blog-content {
+            line-height: 1.6;
+        }
     </style>
-    <title>Interesting Websites</title>
+    <title>Introduction to HTML</title>
 </head>
 <body>
     <header>
-        <h1>Interesting Websites</h1>
+        <h1>Introduction to HTML</h1>
     </header>
     <section>
-        <div class="category">
-            <h3>OJ</h3>
-            <ul class="link-list">
-                <li class="link-item"><a href="https://www.luogu.com.cn/">Luogu</a></li>
-                <li class="link-item"><a href="https://codeforces.com/">Codeforces</a></li>
-                <li class="link-item"><a href="https://atcoder.jp/">Atcoder</a></li>
-            </ul>
-        </div>
-        <div class="category">
-            <h3>常用</h3>
-            <ul class="link-list">
-                <li class="link-item"><a href="http://github.com/">Github</a></li>
-                <li class="link-item"><a href="https://wallpaperscraft.com/">Wallpaper</a></li>
-            </ul>
-        </div>
-        <div class="category">
-            <h3>游戏</h3>
-            <ul class="link-list">
-                <li class="link-item"><a href="https://oldj.net/static/html5-tower-defense/td.html">Tower</a></li>
-                <li class="link-item"><a href="https://gyu12345.github.io/Website/Saying.html">Saying</a></li>
-	<li class="link-item"><a href="https://chishenme.xyz/">Eat?</a></li>
-            </ul>
-        </div>
-        <div class="category">
-            <h3>杂项</h3>
-            <ul class="link-list">
-                <li class="link-item"><a href="https://www.runoob.com/">Runoob</a></li>
-            </ul>
+        <div class="blog-title">What is HTML?</div>
+        <div class="blog-meta">Posted by Gyu on November 15, 2023</div>
+        <div class="blog-content">
+            <p>HTML stands for HyperText Markup Language. It is the standard markup language for creating web pages and web applications.</p>
+            <p>HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
+            <p><a href="index.html">Back to Home</a></p>
         </div>
     </section>
 </body>
