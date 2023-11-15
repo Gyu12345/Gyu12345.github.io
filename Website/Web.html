@@ -1,29 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<h1>Web</h1>
-<style>
-    a:link {text-decoration: none; color:blue;}/*未访问的链接显示为蓝色，text-decoration:none将下划线隐藏*/
-    a:visited {color:blue;} /*用户已访问过的链接显示黑色*/
-    a:hover {color:pink;}   /*鼠标放置在链接上时显示为粉色*/
-    a:active {color:yellow;}  /* 链接被点击那一刻显示黄色 */
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style> 
+            p { 
+                font-size: 20px; 
+                text-align:center; 
+            } 
+          
+            /*unvisited link will appear green*/ 
+            a:link{ 
+                color:blus; 
+            } 
+          
+            /*visited link will appear blue*/ 
+            a:visited{ 
+                color:blue; 
+            } 
+          
+            /*when mouse hovers over link it will appear orange*/ 
+            a:hover{ 
+                color:orange; 
+            } 
+          
+            /*when the link is clicked, it will appear black*/ 
+            a:active{ 
+                color:blue; 
+            } 
+          
+        </style>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .flower {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid #ff69b4;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+       
+    </style>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .link-list {
+            list-style: none;
+            padding: 0;
+        }
+        .link-item {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+        .link-item a {
+            text-decoration: none;
+            color: #333;
+        }
+        .link-item a:hover {
+            color: #666;
+        }
+        .category {
+            margin-bottom: 20px;
+        }
+        .category h3 {
+            margin-bottom: 10px;
+        }
+    </style>
+    <title>Interesting Websites</title>
 </head>
 <body>
-<h2>小游戏类</h2>
-<a href="https://oldj.net/static/html5-tower-defense/td.html">Html5塔防小游戏</a>
-<a href="http://farter.cn/tetr.js/">俄罗斯方块</a>
-<a href="https://chishenme.xyz/">今天中午吃什么</a>
-<a href="https://gyu12345.github.io/Website/Saying.html">每日一言</a>
-<a href="https://www.airpano.org.cn/">航拍</a>
-<h2>OJ</h2>
-<a href="https://www.luogu.com.cn">洛谷</a>
-<a href="https://codeforces.com/">Codeforces</a>
-<a href="https://atcoder.jp//">Atcoder</a>
-<h2>教程</h2>
-<a href="https://www.runoob.com/">菜鸟教程</a>
-<h2>常用辅助</h2>
-<a href="http://github.com">Github</a>
-<a href="https://wallpaperscraft.com/">Wallen壁纸</a>
+    <header>
+        <h1>Interesting Websites</h1>
+    </header>
+    <section>
+        <div class="category">
+            <h3>OJ</h3>
+            <ul class="link-list">
+                <li class="link-item"><a href="https://www.luogu.com.cn/">Luogu</a></li>
+                <li class="link-item"><a href="https://codeforces.com/">Codeforces</a></li>
+                <li class="link-item"><a href="https://atcoder.jp/">Atcoder</a></li>
+            </ul>
+        </div>
+        <div class="category">
+            <h3>常用</h3>
+            <ul class="link-list">
+                <li class="link-item"><a href="http://github.com/">Github</a></li>
+                <li class="link-item"><a href="https://wallpaperscraft.com/">Wallpaper</a></li>
+            </ul>
+        </div>
+        <div class="category">
+            <h3>游戏</h3>
+            <ul class="link-list">
+                <li class="link-item"><a href="https://oldj.net/static/html5-tower-defense/td.html">Tower</a></li>
+                <li class="link-item"><a href="https://gyu12345.github.io/Website/Saying.html">Saying</a></li>
+	<li class="link-item"><a href="https://chishenme.xyz/">Eat?</a></li>
+            </ul>
+        </div>
+        <div class="category">
+            <h3>杂项</h3>
+            <ul class="link-list">
+                <li class="link-item"><a href="https://www.runoob.com/">Runoob</a></li>
+            </ul>
+        </div>
+    </section>
 </body>
 </html>
